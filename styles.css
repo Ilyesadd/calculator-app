@@ -1,0 +1,137 @@
+:root {
+    --main-bg: hsl(222, 26%, 31%);
+    --keypad-bg: hsl(223, 31%, 20%);
+    --screen-bg: hsl(224, 36%, 15%);
+    --key-bg: hsl(225, 21%, 49%);
+    --key-shadow: hsl(224, 28%, 35%);
+    --key-red-bg: hsl(6, 63%, 50%);
+    --key-red-shadow: hsl(6, 70%, 34%);
+    --key-light-bg: hsl(30, 25%, 89%);
+    --key-light-shadow: hsl(28, 16%, 65%);
+    --text-dark: hsl(221, 14%, 31%);
+    --text-white: hsl(0, 0%, 100%);
+  }
+  
+  body {
+    font-family: 'League Spartan', sans-serif;
+    background-color: var(--main-bg);
+    color: var(--text-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .calculator {
+    width: 400px;
+    background-color: var(--keypad-bg);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .theme-switcher {
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggle {
+    display: flex;
+    margin-left: 10px;
+  }
+  
+  .toggle input {
+    display: none;
+  }
+  
+  .toggle label {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .screen {
+    background-color: var(--screen-bg);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  .screen input {
+    width: 100%;
+    background: none;
+    border: none;
+    color: var(--text-white);
+    font-size: 32px;
+    text-align: right;
+  }
+  
+  .keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
+  .keypad button {
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: var(--key-light-bg);
+    color: var(--text-dark);
+    box-shadow: 0 4px var(--key-light-shadow);
+  }
+  
+  .keypad button[data-action="delete"],
+  .keypad button[data-action="reset"] {
+    background-color: var(--key-bg);
+    color: var(--text-white);
+    box-shadow: 0 4px var(--key-shadow);
+  }
+  
+  .keypad button[data-action="calculate"] {
+    background-color: var(--key-red-bg);
+    color: var(--text-white);
+    box-shadow: 0 4px var(--key-red-shadow);
+    grid-column: span 2;
+  }
+  
+  .keypad button[data-action="reset"] {
+    grid-column: span 2;
+  }
+  
+  /* Theme 2 */
+  .theme-2 {
+    --main-bg: hsl(0, 0%, 90%);
+    --keypad-bg: hsl(0, 5%, 81%);
+    --screen-bg: hsl(0, 0%, 93%);
+    --key-bg: hsl(185, 42%, 37%);
+    --key-shadow: hsl(185, 58%, 25%);
+    --key-red-bg: hsl(25, 98%, 40%);
+    --key-red-shadow: hsl(25, 99%, 27%);
+    --key-light-bg: hsl(45, 7%, 89%);
+    --key-light-shadow: hsl(35, 11%, 61%);
+    --text-dark: hsl(60, 10%, 19%);
+    --text-white: hsl(0, 0%, 100%);
+  }
+  
+  /* Theme 3 */
+  .theme-3 {
+    --main-bg: hsl(268, 75%, 9%);
+    --keypad-bg: hsl(268, 71%, 12%);
+    --screen-bg: hsl(268, 71%, 12%);
+    --key-bg: hsl(281, 89%, 26%);
+    --key-shadow: hsl(285, 91%, 52%);
+    --key-red-bg: hsl(176, 100%, 44%);
+    --key-red-shadow: hsl(177, 92%, 70%);
+    --key-light-bg: hsl(268, 47%, 21%);
+    --key-light-shadow: hsl(290, 70%, 36%);
+    --text-dark: hsl(52, 100%, 62%);
+    --text-white: hsl(0, 0%, 100%);
+  }
