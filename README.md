@@ -31,7 +31,7 @@ Merci d'avoir consulté ce projet de calculatrice. Ce projet est une solution au
 ## Captures d'écran
 
 ### Thème 1 (Clair)
-![Theme 1 Screenshot](./screenshots/theme1.png)
+![Design preview for the Calculator app coding challenge](./design/desktop-preview.jpg)
 
 ### Thème 2 (Sombre)
 ![Theme 2 Screenshot](./screenshots/theme2.png)
