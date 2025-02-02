@@ -34,8 +34,8 @@ Merci d'avoir consulté ce projet de calculatrice. Ce projet est une solution au
 ![Design preview for the Calculator app coding challenge](./design/desktop-preview.jpg)
 
 ### Thème 2 (Sombre)
-![Theme 2 Screenshot](./design/screenshots/theme2.jpg)
+![Theme 2 Screenshot](./design/theme2.jpg)
 
 ### Thème 3 (Violet)
-![Theme 3 Screenshot](./design/screenshots/theme3.jpg)
+![Theme 3 Screenshot](./design/theme3.jpg)
    
